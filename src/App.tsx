@@ -22,11 +22,9 @@ function App() {
             <NavBar />
           </GridItem>
           <Show when={showAside}>
-            <GridItem area="aside" bg="gold">
-              Aside
-            </GridItem>
+            <GridItem area="aside">Aside</GridItem>
           </Show>
-          <GridItem area="main" bg="dodgerblue">
+          <GridItem area="main">
             <GameGrid />
           </GridItem>
         </Grid>
