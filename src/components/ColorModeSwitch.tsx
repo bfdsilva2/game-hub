@@ -8,7 +8,7 @@ const ColorModeSwitch = () => {
       <Switch.Root colorPalette="green" checked={colorMode === "dark"} onCheckedChange={toggleColorMode}>
         <Switch.HiddenInput />
         <Switch.Control />
-        <Switch.Label>Dark Mode</Switch.Label>
+        <Switch.Label whiteSpace="nowrap">Dark Mode</Switch.Label>
       </Switch.Root>
     </HStack>
   );
