@@ -10,7 +10,7 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card.Root>
+    <Card.Root marginEnd={2}>
       <Image src={getCroppedImageUrl(game.background_image)} />
 
       <CardBody>
