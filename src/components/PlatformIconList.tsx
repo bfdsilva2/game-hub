@@ -1,4 +1,3 @@
-import type { Platform } from "@/hooks/useGames";
 import { HStack, Icon } from "@chakra-ui/react";
 import { Tooltip } from "@/components/ui/tooltip";
 import { FaWindows, FaPlaystation, FaXbox, FaApple, FaLinux, FaAndroid } from "react-icons/fa";
@@ -6,6 +5,7 @@ import { MdPhoneIphone } from "react-icons/md";
 import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import type { IconType } from "react-icons";
+import type { Platform } from "@/hooks/usePlatforms";
 
 interface Props {
   platforms: Platform[];
@@ -41,18 +41,3 @@ const PlatformIconList = ({ platforms }: Props) => {
 };
 
 export default PlatformIconList;
-
-/*
-    <HStack>
-      {platforms.map((platform) => (
-        <Icon key={platform.id} as={iconMap[platform.slug]} />
-      ))}
-    </HStack>
-
-
-
-
-    {platforms.map((platform) => (
-        <Text> {platform.slug}</Text>
-      ))}
-*/
